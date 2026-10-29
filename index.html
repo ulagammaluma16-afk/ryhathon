@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketwise — Marketing intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="auth" class="auth-screen">
+    <section class="auth-art">
+      <div class="auth-brand"><span class="brand-mark">✳</span> marketwise<span style="color:#97ae9d">/</span></div>
+      <div class="auth-copy"><div class="eyebrow">Marketing, made measurable</div><h1>Every channel.<br>One clear picture.</h1><p>Bring your campaigns, customers, and performance data together to make confident decisions and reach your next growth goal.</p><div class="auth-stat"><div><strong>+24.8%</strong><span>average revenue growth</span></div><div><strong>3.2×</strong><span>faster campaign insights</span></div></div></div>
+      <div class="auth-foot">© 2025 Marketwise · Your marketing, in sync.</div>
+    </section>
+    <section class="auth-form-wrap"><form class="auth-form" id="authForm"><div class="eyebrow" id="authEyebrow">WELCOME BACK</div><h2 id="authTitle">Sign in to your workspace</h2><p id="authDesc">Pick up where your team left off.</p><label for="username">Username or email</label><input id="username" name="username" placeholder="name@company.com" autocomplete="username" required><label for="password">Password</label><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required minlength="4"><div id="confirmWrap" class="hidden"><label for="confirmPassword">Confirm password</label><input id="confirmPassword" type="password" placeholder="Re-enter your password" minlength="4"></div><button class="btn primary" id="authSubmit" type="submit">Sign in <span>→</span></button><div class="auth-switch"><span id="switchText">New to Marketwise?</span> <button type="button" id="authToggle">Create an account</button></div><div class="auth-note">By continuing, you agree to our Terms of Service and Privacy Policy.</div></form></section>
+  </div>
+  <div id="app" class="app hidden">
+    <aside class="sidebar" id="sidebar"><div class="brand"><span class="brand-mark">✳</span> marketwise<span>/</span></div><div class="workspace"><div class="workspace-icon">N</div><div><small>Workspace</small><b>Northstar Studio</b></div><span class="chev">⌄</span></div><div class="nav-label">WORKSPACE</div><nav class="nav" id="nav"><button class="active" data-page="overview"><span class="ico">◫</span>Overview</button><button data-page="campaigns"><span class="ico">◈</span>Campaigns<span class="count">8</span></button><button data-page="products"><span class="ico">▧</span>Products</button><button data-page="channels"><span class="ico">◉</span>Channels</button><button data-page="audience"><span class="ico">♧</span>Audience</button><button data-page="goals"><span class="ico">◎</span>Goals &amp; targets</button><button data-page="insights"><span class="ico">✧</span>Insights<span class="count">3</span></button><div class="nav-label" style="margin-top:22px">MANAGE</div><button data-page="reports"><span class="ico">▤</span>Reports</button><button data-page="settings"><span class="ico">⚙</span>Settings</button></nav><div class="sidebar-bottom"><div class="help-card"><b>Make your next move</b><p>Get a weekly snapshot of what’s working across your channels.</p><button data-goto="insights">Explore insights →</button></div><div class="profile"><div class="avatar">JD</div><div><b>Jordan Davis</b><small>Marketing lead</small></div><span class="dots">···</span></div></div></aside>
+    <main class="main"><header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="crumb">Workspace <span style="padding:0 7px;color:#c2cbc4">/</span><strong id="crumb">Overview</strong></div><div class="top-actions"><div class="search"><span>⌕</span><input id="globalSearch" placeholder="Search anything…"></div><button class="icon-btn" title="Help">? </button><button class="icon-btn" title="Notifications">♧<i class="notification-dot"></i></button><div class="top-avatar">JD</div></div></header><div class="content" id="content"></div></main>
+  </div>
+<script src="script.js" defer></script>
+</body>
+</html>
